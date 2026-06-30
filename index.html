@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mock-up moderno per Osmize.com: aperture, località e informazioni utili per visitatori nella zona di Trieste.">
+    <title>Osmize.com | Mock-up moderno</title>
+    <link rel="preload" as="image" href="assets/hero-osmiza.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Osmize.com">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span>
+          <strong>Osmize.com</strong>
+          <small>Il portale delle osmize</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Navigazione principale">
+        <a href="#aperte">Aperte oggi</a>
+        <a href="#calendario">Calendario</a>
+        <a href="#zone">Zone</a>
+        <a href="#collabora">Collabora</a>
+      </nav>
+      <div class="language-switcher" aria-label="Lingue">
+        <button type="button" aria-pressed="true">IT</button>
+        <button type="button">SL</button>
+        <button type="button">EN</button>
+        <button type="button">DE</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="Cortile di osmiza sul Carso triestino"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Trieste e Carso</p>
+          <h1 id="hero-title">Trova in pochi secondi le osmize aperte oggi.</h1>
+          <p class="hero-copy">Un portale più semplice per turisti e residenti: aperture aggiornate, zone chiare, contatto immediato e indicazioni pratiche prima di partire.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#aperte">Vedi aperte oggi</a>
+            <a class="button secondary" href="#collabora">Proposta progetto</a>
+          </div>
+        </div>
+        <aside class="today-panel" aria-label="Riepilogo di oggi">
+          <span class="status-dot"></span>
+          <strong>4 osmize aperte oggi</strong>
+          <span>Martedì 30 giugno 2026</span>
+          <small>Prima di partire, verifica telefonicamente l'apertura.</small>
+        </aside>
+      </section>
+
+      <section class="search-band" aria-label="Ricerca osmize">
+        <div>
+          <label for="search">Cerca per nome o località</label>
+          <input id="search" type="search" placeholder="Es. Contovello, Lisjak, Aurisina">
+        </div>
+        <div>
+          <label for="area">Zona</label>
+          <select id="area">
+            <option value="all">Tutte le zone</option>
+            <option value="carso">Carso</option>
+            <option value="costa">Costiera</option>
+            <option value="valle">Val Rosandra</option>
+          </select>
+        </div>
+        <div>
+          <label for="date">Data visita</label>
+          <input id="date" type="date" value="2026-06-30">
+        </div>
+      </section>
+
+      <section class="section" id="aperte" aria-labelledby="open-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Aperte oggi</p>
+            <h2 id="open-title">Informazioni rapide per decidere dove andare.</h2>
+          </div>
+          <p>Le schede sono pensate per chi è già in movimento: nome, località, periodo, telefono e percorso sempre visibili.</p>
+        </div>
+        <div class="cards-grid" id="osmize-list"></div>
+      </section>
+
+      <section class="map-section" id="zone" aria-labelledby="zone-title">
+        <div class="map-copy">
+          <p class="eyebrow">Zone</p>
+          <h2 id="zone-title">Dalla città al Carso, senza perdersi tra le informazioni.</h2>
+          <p>Il mock-up organizza le aperture per area e rende chiaro se la visita è più vicina alla Costiera, ai borghi carsici o alla Val Rosandra.</p>
+          <ul class="zone-list">
+            <li><span></span> Carso: Prepotto, Aurisina, Contovello</li>
+            <li><span></span> Costiera e borghi sul mare</li>
+            <li><span></span> Val Rosandra e dintorni</li>
+          </ul>
+        </div>
+        <div class="map-card" aria-label="Mappa stilizzata delle zone">
+          <div class="map-line"></div>
+          <button class="map-pin pin-one" type="button">Prepotto</button>
+          <button class="map-pin pin-two" type="button">Contovello</button>
+          <button class="map-pin pin-three" type="button">Aurisina</button>
+          <button class="map-pin pin-four" type="button">Bagnoli</button>
+        </div>
+      </section>
+
+      <section class="section compact" id="calendario" aria-labelledby="calendar-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Calendario</p>
+            <h2 id="calendar-title">Prossime aperture inserite.</h2>
+          </div>
+          <p>Un flusso aggiornamenti più leggibile aiuta chi pianifica il weekend o una visita durante le vacanze.</p>
+        </div>
+        <div class="updates">
+          <article>
+            <time datetime="2026-06-24">24 giugno 2026</time>
+            <strong>Pertot Gabriel</strong>
+            <span>Apertura dal 26/06/2026 al 05/07/2026</span>
+          </article>
+          <article>
+            <time datetime="2026-06-21">21 giugno 2026</time>
+            <strong>Stubelj Ivana</strong>
+            <span>Nuove date disponibili a luglio</span>
+          </article>
+          <article>
+            <time datetime="2026-06-19">19 giugno 2026</time>
+            <strong>Bizjak</strong>
+            <span>Aperture estive dal 18/07/2026</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="proposal" id="collabora" aria-labelledby="proposal-title">
+        <div>
+          <p class="eyebrow">Proposta</p>
+          <h2 id="proposal-title">Un redesign semplice da mostrare, discutere e migliorare insieme.</h2>
+          <p>Questo progetto è un mock-up iniziale per proporre una collaborazione: aggiornare l'esperienza pubblica mantenendo il valore storico del portale, la gestione delle aperture e il servizio alla comunità.</p>
+        </div>
+        <a class="button primary" href="mailto:info@osmize.com?subject=Proposta%20collaborazione%20redesign%20Osmize.com">Scrivi ai responsabili</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Mock-up non ufficiale per proposta di collaborazione.</span>
+      <span>Dati dimostrativi ricavati dalla struttura pubblica di Osmize.com.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
